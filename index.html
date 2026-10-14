@@ -25,7 +25,7 @@ header{position:relative;display:flex;align-items:center;justify-content:center;
 <div class="selected"><span class="chip" id="selectedChip" style="background:#000000"></span><div class="selected-text"><div class="hex-big" id="selectedHex">#000000</div><div class="rgb" id="selectedRgb">RGB 0, 0, 0</div><div class="rgb" id="selectedPercent"></div></div></div>
 </section>
 <section class="panel palette-panel"><h2>Top 10 colores más predominantes de la imagen</h2>
-<div id="status" class="status">＋ Elegir imagen</div><div class="progress hidden" id="progress"><span id="progressBar"></span></div><div class="palette-meta hidden" id="paletteMeta"><span id="resultCount">0 colores</span><span id="pageInfo"></span></div><div id="palette" class="palette"></div><div class="more-wrap hidden" id="moreWrap"><button class="btn" id="moreBtn">Cargar más colores</button></div></section>
+<div id="status" class="status"> ­­­ </div><div class="progress hidden" id="progress"><span id="progressBar"></span></div><div class="palette-meta hidden" id="paletteMeta"><span id="resultCount">0 colores</span><span id="pageInfo"></span></div><div id="palette" class="palette"></div><div class="more-wrap hidden" id="moreWrap"><button class="btn" id="moreBtn">Cargar más colores</button></div></section>
 </div></main><canvas id="canvas" hidden></canvas>
 <script>
 (()=>{'use strict';const $=id=>document.getElementById(id);const fileInput=$('fileInput'),canvas=$('canvas'),ctx=canvas.getContext('2d',{willReadFrequently:true});let exactColors=[],shownColors=[],selectedHex=null,imageUrl=null,rendered=0,filtered=[],busy=false,analysisToken=0,userSelectedColor=false;const PAGE=120,MAX_SIDE=280;
